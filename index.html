@@ -1,26 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>GraphiX Cards</title>
+    <title>GraphiX Cards</title>
 
-        <script>
-        const projectName = 'product-landing-page';
-        localStorage.setItem('example_project', 'Product Landing Page');
-        </script>
-        <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    </head>
-    <body>
-        <header>
-            <h1></h1>
-            <nav id="nav-bar">
-                <ul>
-                    <li><a href="#video" class="nav-link">Showcase</a></li>
-                </ul>
-            </nav>
-        </header>
+    <link rel="stylesheet" href="index.css" />
+
+    <script>
+      const projectName = "product-landing-page";
+      localStorage.setItem("example_project", "Product Landing Page");
+    </script>
+    <script
+      defer
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#header" class="nav-link">Home</a></li>
+          <li><a href="#video" class="nav-link">Showcase</a></li>
+          <li><a href="#form" class="nav-link">Newsletter</a></li>
+        </ul>
+      </nav>
+      <div id="title-container">
         <h1>Graphics Cards</h1>
-        <p>Hello world!</p>
-    </body>
+        <img
+          id="header-img"
+          alt="GraphiX Cards Logo"
+          src="logo.svg"
+          width="64px"
+          height="64px"
+        />
+      </div>
+    </header>
+    <main>
+      <p>
+        We're an upcoming graphics cards reseller. <br />
+        We have deals with all the greatest manufacturers!
+      </p>
+      <p>Check out the following video review of one of our products:</p>
+      <section id="video-wrapper">
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/PUIxyLRnzDc"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <h2>Newsletter</h2>
+        <div>
+          <label for="email">Your email: </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="name@example.com"
+          />
+          <input id="submit" type="submit" value="Send!" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>
+        This site is a project for the
+        <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>
+        Responsive Web Dev course.
+      </p>
+      <p>
+        Graphics card icon made by
+        <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from
+        <a href="http://www.flaticon.com/">www.flaticon.com</a>
+      </p>
+    </footer>
+  </body>
 </html>
